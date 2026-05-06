@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    font-family: "Bitcount Ink", system-ui;
+}
+nav{
+    background-color:#030712;
+    padding: 20px;
+    color:white;
+
+}
+.navigation{
+    width: 90%;
+    margin: 0px auto;
+    padding:10px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    background-color:#030712;
+    color: aliceblue;
+}
+.logo img{
+    height:40px;
+    width: fit-content;
+
+}
+
+.nav_items{
+    display:flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav_items a{
+    color: white;
+    text-decoration:none;
+    text-transform: capitalize;
+    font-size:14px;
+    font-weight: 500;
+}
+
+.consultant_button{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+}
+.comsultant_button button{
+    border:none;
+    padding:10px 30px;
+    border-radius: 10px;
+    font-size:14px;
+    font-weight: 600;
+}
