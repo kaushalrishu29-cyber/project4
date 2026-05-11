@@ -95,7 +95,7 @@ nav{
     height:200%;
     background-color: green;
     padding:10px 0px;
-    background-image: url("../resources/bg1.jpg");
+    background-image: url("./resources/bg1.jpg");
 }
 .hero_top{
     display:flex;
