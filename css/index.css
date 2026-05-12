@@ -4,7 +4,8 @@
     --primary-color:#030712;
     --color-white: rgb(219, 217, 217);
     --secondary-color:#A87A2A;
-}
+    --secondary_color:#ffc663; 
+    --font-family-primary:"Playfair", serif;
 *{
     font-family: "DM Sans", sans-serif;
 }
@@ -95,6 +96,7 @@ nav{
     height:90vh;
     background-color: green;
     padding:10px 0px;
+    margin:0%;
     background-image: url("../resources/bg1.jpg");
 }
 .hero_top{
@@ -120,11 +122,12 @@ nav{
 .hero_body{
     width: 90%;
     height:100%;
-    margin:0px auto;
+    margin:60px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap:30px;
+    align-items:self-start;
 }
 .hero_title{
     font-family: "Playfair", serif;
@@ -174,18 +177,21 @@ nav{
 }
 .hero_cta{
     display: flex;
-    gap:10px;
+    gap:0px;
     align-items: center;
+    margin-top: 0px;
+    padding-bottom: 40px;
     
 }
 .hero_cta div{
     padding:15px 30px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 600;
     background-color: rgb(219, 217, 217) ;
     position: relative;
     overflow: clip;
+    
 }
 .hero_cta div p{
     position: relative;
@@ -213,10 +219,77 @@ nav{
     color: rgb(219, 217, 217);
 }
 
+.cta{
+    background-color: var(--primary-color);
+    padding:20px 0px;
+    color:var(--color-white);  
+    border:1px solid var(--color-white);
+    
+}
+.cta_body{
+    width:90%;
+    margin:0px auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size:30px;
+    font-weight:600;
+}
+.cta_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cta_content div{
+    font-size: 38px;
+    font-family: "Playfair", serif;
+}
+.cta_content p{
+    font-size: 20px;
+}
+.exp{
+    display: flex;
+    justify-content: center;
+    background-color: var(--pimary-color);
+}
+.exp_main{
+    width: 90%;
+    padding:7x 0px;}
+.exp_top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;}
+.exp_sub{
+    background-color: var(--secondary-color);
+     font-size: 18px;
+      border-radius: 20px;
+       width: fit-content;
+        padding: 6px 20px;
+    text-transform: capitalize;
+    color:var(--secondary_color);
+    font-weight: 600;
+
+
+}
+
+.exp_title{
+    font-family:var(--font-family-primary);
+    font-size: 48px;
+    color:var(--color-white);
+    font-weight: 600;
+
+}
+.exp_desc{
+    color:var(--color-white);
+    font-size:18px;
+    width:50%;
+    margin:0px auto;
+    text-align:center;
+}
 
 /* MEDIA QUERY */
 @media(max-width:480px){
-    navigation{
+    .navigation{
     padding: 12px 0px;
 }
 .logo img{
